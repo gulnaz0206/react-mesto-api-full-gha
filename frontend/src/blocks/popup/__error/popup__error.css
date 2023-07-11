@@ -1,0 +1,13 @@
+.popup__error {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    max-width: 358px;
+    margin-left: 36px;
+    opacity: 0;
+    color: red;
+}
+
+.popup__error_visible {
+    opacity: 1;
+}
