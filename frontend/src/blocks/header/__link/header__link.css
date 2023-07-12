@@ -8,3 +8,9 @@
     cursor: pointer;
     margin-left: 685px;
 }
+
+@media screen and (max-width: 320px) {
+    .header__link {
+        margin-left: 110px;
+    }
+}
