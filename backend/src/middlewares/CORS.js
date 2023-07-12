@@ -1,9 +1,10 @@
 const allowedCors = [
-
+  'https://react-mesto-gulnaz0206.nomoredomains.work/',
+  'http://react-mesto-gulnaz0206.nomoredomains.work/',
 ];
- const DEFAULT_ALLOWED_METHODS = 'GET,HEAD,PUT,PATCH,POST,DELETE';
+const DEFAULT_ALLOWED_METHODS = 'GET,HEAD,PUT,PATCH,POST,DELETE';
 
- const CORS = (req, res, next) => {
+const CORS = (req, res, next) => {
   const { origin } = req.headers;
 
   if (allowedCors.includes(origin)) {
@@ -19,6 +20,6 @@ const allowedCors = [
     return;
   }
   next();
- };
+};
 
- module.exports = { CORS };
+module.exports = { CORS };

@@ -6,7 +6,7 @@ const NotFound = require('../errors/NotFound');
 const Conflict = require('../errors/Conflict');
 const {
   OK, CREATED,
-} = require('../utils/resposneStatus');
+} = require('../../utils/resposneStatus');
 
 module.exports.getUsers = (req, res, next) => {
   User.find({})

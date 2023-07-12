@@ -1,4 +1,4 @@
-const { BAD_REQUEST } = require('../utils/resposneStatus');
+const { BAD_REQUEST } = require('../../utils/resposneStatus');
 
 class BadRequest extends Error {
   constructor(message) {

@@ -1,7 +1,7 @@
 const Card = require('../models/card');
 const {
   OK, CREATED,
-} = require('../utils/resposneStatus');
+} = require('../../utils/resposneStatus');
 const NotFound = require('../errors/NotFound');
 const BadRequest = require('../errors/BadRequest');
 const Forbidden = require('../errors/Forbidden');
