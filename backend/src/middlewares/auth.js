@@ -1,8 +1,9 @@
 const jwt = require('jsonwebtoken');
-const Unauthorized = require('../../src/errors/Unauthorized');
+const Unauthorized = require('../errors/Unauthorized');
 
 const { NODE_ENV, JWT_SECRET } = process.env;
 
+// eslint-disable-next-line consistent-return
 module.exports = (req, res, next) => {
   const { cookie } = req.headers;
   if (!cookie) {
@@ -16,5 +17,7 @@ module.exports = (req, res, next) => {
     return next(new Unauthorized('Необходима авторизация'));
   }
   req.user = payload;
+  // console.log(req.user);
+  // console.log(req.body);
   next();
 };
